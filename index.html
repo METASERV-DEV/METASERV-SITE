@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>METASERV – Services informatiques et applications</title>
   <meta name="description" content="METASERV : support et maintenance informatique, cybersécurité pour les TPE/PME, et édition d'applications mobiles.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%3E%3Cg%3E%3Crect%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2226%22%20fill%3D%22%2316324F%22/%3E%0A%3Cg%20fill%3D%22%23fff%22%3E%3Crect%20x%3D%2226%22%20y%3D%2226%22%20width%3D%2268%22%20height%3D%2218%22%20rx%3D%225%22/%3E%3Crect%20x%3D%2226%22%20y%3D%2251%22%20width%3D%2268%22%20height%3D%2218%22%20rx%3D%225%22/%3E%3C/g%3E%0A%3Crect%20x%3D%2226%22%20y%3D%2276%22%20width%3D%2268%22%20height%3D%2218%22%20rx%3D%225%22%20fill%3D%22%235FD3B3%22/%3E%0A%3Cg%20fill%3D%22%2316324F%22%3E%3Ccircle%20cx%3D%2284%22%20cy%3D%2235%22%20r%3D%223.5%22/%3E%3Ccircle%20cx%3D%2284%22%20cy%3D%2260%22%20r%3D%223.5%22/%3E%3Ccircle%20cx%3D%2284%22%20cy%3D%2285%22%20r%3D%223.5%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
   <style>
     :root { --bleu: #16324F; --accent: #1F8A70; --fond: #F6F8FA; --texte: #1d1d1d; --gris: #5b6672; }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--texte); background: #fff; line-height: 1.6; }
     .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-    header { background: var(--bleu); color: #fff; padding: 56px 0 64px; }
-    .logo { font-weight: 800; letter-spacing: 2px; font-size: 22px; }
-    header h1 { font-size: clamp(26px, 5vw, 40px); margin: 28px 0 12px; line-height: 1.2; }
+    .topbar { background: #fff; border-bottom: 1px solid #e3e8ee; padding: 16px 0; }
+    .logo-svg { height: 44px; width: auto; display: block; }
+    header { background: var(--bleu); color: #fff; padding: 48px 0 56px; }
+    header h1 { font-size: clamp(26px, 5vw, 40px); margin: 0 0 12px; line-height: 1.2; }
     header p { margin: 0; max-width: 620px; opacity: .9; font-size: 18px; }
     section { padding: 48px 0; }
     section.alt { background: var(--fond); }
@@ -31,9 +33,17 @@
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="wrap">
+      <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 644 88" role="img" aria-label="METASERV"><g transform="scale(0.7333)"><rect width="120" height="120" rx="26" fill="#16324F"/>
+<g fill="#fff"><rect x="26" y="26" width="68" height="18" rx="5"/><rect x="26" y="51" width="68" height="18" rx="5"/></g>
+<rect x="26" y="76" width="68" height="18" rx="5" fill="#5FD3B3"/>
+<g fill="#16324F"><circle cx="84" cy="35" r="3.5"/><circle cx="84" cy="60" r="3.5"/><circle cx="84" cy="85" r="3.5"/></g></g><path transform="translate(112,69.9)" fill="#16324F" d="M4.032 0.0V-51.839999999999996H13.895999999999999L33.336 -28.656L52.70399999999999 -51.839999999999996H62.63999999999999V0.0H53.928V-39.744L33.336 -15.191999999999998L12.671999999999999 -39.672V0.0Z M77.99199999999999 0.0V-51.839999999999996H125.58399999999997V-43.128H86.704V-30.311999999999998H118.02399999999999V-21.528H86.704V-8.712H125.58399999999997V0.0Z M159.00799999999998 0.0V-43.128H137.408V-51.839999999999996H189.248V-43.128H167.72V0.0Z M201.79199999999997 0.0V-42.12Q201.79199999999997 -44.784 203.08799999999997 -47.016Q204.384 -49.248 206.61599999999999 -50.544Q208.84799999999998 -51.839999999999996 211.51199999999997 -51.839999999999996H243.91199999999998Q246.57599999999996 -51.839999999999996 248.772 -50.544Q250.968 -49.248 252.29999999999998 -47.016Q253.63199999999998 -44.784 253.63199999999998 -42.12V0.0H244.92V-17.784H210.432V0.0H201.79199999999997ZM210.432 -26.424H244.92V-41.831999999999994Q244.92 -42.407999999999994 244.524 -42.768Q244.128 -43.128 243.552 -43.128H211.72799999999998Q211.224 -43.128 210.82799999999997 -42.768Q210.432 -42.407999999999994 210.432 -41.831999999999994V-26.424Z M278.272 0.0Q275.608 0.0 273.41200000000003 -1.2959999999999998Q271.216 -2.5919999999999996 269.91999999999996 -4.824Q268.62399999999997 -7.055999999999999 268.62399999999997 -9.719999999999999V-13.175999999999998H277.264V-10.008Q277.264 -9.431999999999999 277.624 -9.072Q277.984 -8.712 278.56 -8.712H310.384Q310.96 -8.712 311.356 -9.072Q311.752 -9.431999999999999 311.752 -10.008V-20.304Q311.752 -20.808 311.356 -21.168Q310.96 -21.528 310.384 -21.528H278.272Q275.608 -21.528 273.41200000000003 -22.86Q271.216 -24.191999999999997 269.91999999999996 -26.387999999999998Q268.62399999999997 -28.583999999999996 268.62399999999997 -31.247999999999998V-42.12Q268.62399999999997 -44.784 269.91999999999996 -47.016Q271.216 -49.248 273.41200000000003 -50.544Q275.608 -51.839999999999996 278.272 -51.839999999999996H310.74399999999997Q313.408 -51.839999999999996 315.60400000000004 -50.544Q317.8 -49.248 319.132 -47.016Q320.464 -44.784 320.464 -42.12V-38.663999999999994H311.752V-41.831999999999994Q311.752 -42.407999999999994 311.356 -42.768Q310.96 -43.128 310.384 -43.128H278.56Q277.984 -43.128 277.624 -42.768Q277.264 -42.407999999999994 277.264 -41.831999999999994V-31.535999999999998Q277.264 -31.031999999999996 277.624 -30.671999999999997Q277.984 -30.311999999999998 278.56 -30.311999999999998H310.74399999999997Q313.408 -30.311999999999998 315.60400000000004 -28.979999999999997Q317.8 -27.647999999999996 319.132 -25.451999999999998Q320.464 -23.255999999999997 320.464 -20.592V-9.719999999999999Q320.464 -7.055999999999999 319.132 -4.824Q317.8 -2.5919999999999996 315.60400000000004 -1.2959999999999998Q313.408 0.0 310.74399999999997 0.0Z M335.38399999999996 0.0V-51.839999999999996H382.97599999999994V-43.128H344.09599999999995V-30.311999999999998H375.41599999999994V-21.528H344.09599999999995V-8.712H382.97599999999994V0.0Z M439.29599999999994 0.0 423.38399999999996 -19.008H434.68799999999993L449.01599999999996 -2.016V0.0ZM397.39199999999994 0.0V-51.767999999999994H439.51199999999994Q442.17599999999993 -51.767999999999994 444.37199999999996 -50.43599999999999Q446.568 -49.104 447.9 -46.908Q449.23199999999997 -44.711999999999996 449.23199999999997 -42.047999999999995V-27.791999999999998Q449.23199999999997 -25.2 447.9 -22.967999999999996Q446.568 -20.735999999999997 444.37199999999996 -19.439999999999998Q442.17599999999993 -18.144 439.51199999999994 -18.144L406.032 -18.072V0.0ZM407.328 -26.855999999999998H439.15199999999993Q439.72799999999995 -26.855999999999998 440.12399999999997 -27.215999999999998Q440.52 -27.575999999999997 440.52 -28.151999999999997V-41.831999999999994Q440.52 -42.336 440.12399999999997 -42.732Q439.72799999999995 -43.128 439.15199999999993 -43.128H407.328Q406.82399999999996 -43.128 406.428 -42.732Q406.032 -42.336 406.032 -41.831999999999994V-28.151999999999997Q406.032 -27.575999999999997 406.428 -27.215999999999998Q406.82399999999996 -26.855999999999998 407.328 -26.855999999999998Z M492.304 0.0 462.28 -51.839999999999996H472.36L496.336 -10.152L520.384 -51.839999999999996H530.3919999999999L500.368 0.0Z"/></svg>
+    </div>
+  </div>
+
   <header>
     <div class="wrap">
-      <div class="logo">METASERV</div>
       <h1>Services informatiques et applications pour le quotidien</h1>
       <p>Support, maintenance et cybersécurité pour les TPE et PME, et conception d'applications mobiles utiles et simples.</p>
     </div>
@@ -71,7 +81,7 @@
   <section>
     <div class="wrap">
       <h2>Contact</h2>
-      <p>Par e-mail : <a href="mailto:[ADRESSE_EMAIL]">[ADRESSE_EMAIL]</a></p>
+      <p>Par e-mail : <span class="js-email">activez JavaScript pour afficher l'adresse</span></p>
     </div>
   </section>
 
@@ -82,10 +92,24 @@
       <p>Siège social : [ADRESSE_DU_SIEGE]</p>
       <p>SIREN : [SIREN] – RCS [VILLE_RCS]</p>
       <p>Directeur de la publication : [PRENOM NOM], gérant</p>
-      <p>Contact : [ADRESSE_EMAIL]</p>
+      <p>Contact : <span class="js-email"></span></p>
       <p><strong>Hébergement :</strong> GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</p>
       <p style="margin-top:16px">© METASERV</p>
     </div>
   </footer>
+  <script>
+    // Adresse e-mail assemblée dans le navigateur pour limiter le spam.
+    // >>> Modifier uniquement ces deux lignes <<<
+    var utilisateur = "contact";
+    var domaine = "[DOMAINE_METASERV]";
+    // ------------------------------------------
+    var adresse = utilisateur + "@" + domaine;
+    document.querySelectorAll(".js-email").forEach(function (el) {
+      var a = document.createElement("a");
+      a.href = "mailto:" + adresse;
+      a.textContent = adresse;
+      el.replaceChildren(a);
+    });
+  </script>
 </body>
 </html>
